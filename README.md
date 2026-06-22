@@ -33,7 +33,7 @@ Follow these steps to initialize and run the local development server.
 ### Installation
 
 1. **Clone the repository:**
-   `git clone <your-repository-url>`
+   `git clone https://github.com/AdarshSarathy/Task-Processing-Engine.git`
    `cd python-portfolio-api`
 
 2. **Setup an isolated virtual environment:**
