@@ -1,2 +1,10 @@
 venv/  
 venv/
+sql_app.db
+test.db
+tests/
+__pycache__/
+.coverage
+.coveragerc
+benchmark.db
+benchmark_concurrency.py
