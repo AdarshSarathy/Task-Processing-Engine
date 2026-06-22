@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
 from typing import List
 
@@ -27,7 +28,7 @@ def read_root():
     """
     Health check endpoint to verify API operation.
     """
-    return {"status": "operational", "service": "Task Processing API"}
+    return RedirectResponse(url="/docs")
 
 @app.post("/tasks/", response_model=schemas.Task)
 def create_task(task: schemas.TaskCreate, db: Session = Depends(get_db)):
